@@ -346,14 +346,6 @@ https://github.com/your-username/Traffic_Sign_Detection_System
 ```
 ---
 
-## Author
-
-**Rishav Kumar**
-
-If you found this project useful, consider giving the repository on GitHub!
-
----
-
 ## License
 
 This project is intended for educational and research purposes. You may modify and extend it according to your requirements.
