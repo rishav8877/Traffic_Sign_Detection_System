@@ -337,21 +337,6 @@ If you would like to improve this project:
 5. Push the branch.
 6. Create a Pull Request.
 
-## License
-
-This project is intended for educational and research purposes. You may modify and extend it according to your requirements.
-
----
-
-
-## Author
-
-**Rishav Kumar**
-
-If you found this project useful, consider giving the repository on GitHub!
-
----
-
 ### Project Repository
 
 Add your GitHub repository link here:
@@ -361,4 +346,14 @@ https://github.com/your-username/Traffic_Sign_Detection_System
 ```
 ---
 
+## Author
 
+**Rishav Kumar**
+
+If you found this project useful, consider giving the repository on GitHub!
+
+---
+
+## License
+
+This project is intended for educational and research purposes. You may modify and extend it according to your requirements.
