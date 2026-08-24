@@ -236,23 +236,43 @@ Upload Traffic Sign Image
 
 ##  Example
 
-## Screenshot 1
+The following screenshots demonstrate the model training process, performance visualization, and the final traffic sign classification GUI.
+
+1. CNN Model Training Progress
+   
 ![Screenshot (312)](https://github.com/ayus1234/Traffic_Sign_Detection_System/assets/107507481/db779b23-5a8f-4c40-9964-20b2cbcc22d2)
 
-## Screenshot 2
+*Jupyter Notebook output showing the CNN model training across multiple epochs with training and validation loss and accuracy metrics.*
+
+2. Training vs. Validation Accuracy
+   
 ![Screenshot 2024-03-30 003120](https://github.com/ayus1234/Traffic_Sign_Detection_System/assets/107507481/fc944e83-f7c8-41e7-ae90-e380e4e5f12d)
 
-## Screenshot 3
+*Accuracy curve comparing the model's training accuracy with validation accuracy across the training epochs.*
+
+3. Training vs. Validation Loss
+   
 ![Screenshot 2024-03-30 003211](https://github.com/ayus1234/Traffic_Sign_Detection_System/assets/107507481/9f7d4c5f-7df4-49aa-b08f-2b8ec7e411d6)
 
-## Screenshot 4
+*Loss curve showing the change in training and validation loss during CNN model training.*
+
+4. Traffic Sign Classification — Yield
+   
 ![Screenshot (309)](https://github.com/ayus1234/Traffic_Sign_Detection_System/assets/107507481/6305f186-944c-47e6-907c-58a30b2623e2)
 
-## Screenshot 5
+*GUI prediction example where the trained CNN correctly identifies the uploaded traffic sign as Yield.*
+
+5. Traffic Sign Classification — Road Work
+   
 ![Screenshot (310)](https://github.com/ayus1234/Traffic_Sign_Detection_System/assets/107507481/d66c2b6c-fefb-4b5f-bf70-5096424e111d)
 
-## Screenshot 6
+*GUI prediction example demonstrating recognition of a Road Work warning sign from the uploaded image.*
+
+6. Traffic Sign Classification — Speed Limit
+   
 ![Screenshot (311)](https://github.com/ayus1234/Traffic_Sign_Detection_System/assets/107507481/8a70bee6-24f2-404b-861a-9235846f7db5)
+
+*GUI prediction example where the system identifies the uploaded sign as Speed Limit (30 km/h).*
 
 ---
 
