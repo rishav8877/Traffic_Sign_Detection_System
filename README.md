@@ -337,6 +337,8 @@ If you would like to improve this project:
 5. Push the branch.
 6. Create a Pull Request.
 
+---
+
 ### Project Repository
 
 Add your GitHub repository link here:
