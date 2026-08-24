@@ -1,62 +1,240 @@
 # Traffic Sign Detection System
 
-A deep learning-based system that can accurately detect and classify traffic signs using Convolutional Neural Networks (CNNs). This project is implemented using Keras and TensorFlow, providing both a trained model and a user-friendly GUI interface for real-time traffic sign classification.
+A deep learning-based **Traffic Sign Detection and Classification System** built using **Python, TensorFlow, Keras, and Convolutional Neural Networks (CNN)**. The system can identify and classify traffic signs from uploaded images and provides a simple GUI for easy interaction.
 
-## Live Demo
-🔗 [Try the live demo here](https://ayus1234.github.io/Traffic_Sign_Detection_System/)
+---
+
+##  Project Overview
+
+Traffic signs play an important role in road safety and intelligent transportation systems. This project uses a **Convolutional Neural Network (CNN)** to automatically recognize traffic signs from images.
+
+The model is trained to classify **43 different traffic sign categories**. A Tkinter-based GUI is also provided where users can upload an image and get the predicted traffic sign.
+
+---
+
 
 ## Features
 
-- Traffic sign classification using CNN architecture
-- Interactive GUI interface for easy usage
-- Support for multiple traffic sign categories
-- Pre-trained model included
-- High accuracy in classification
+* Classification of **43 traffic sign categories**
+* CNN-based deep learning model
+* Image upload functionality
+* Simple graphical user interface using Tkinter
+* Fast traffic sign prediction
+* Training and validation accuracy visualization
+* Pre-trained model included
+* Jupyter notebooks for training and GUI implementation
 
-## Project Structure
+---
 
-- `GUI.ipynb`: Interactive GUI implementation for the system
-- `traffic_signs.ipynb`: Main notebook containing model training and evaluation
-- `traffic_classifier.h5/.keras`: Trained model files
-- `Train.csv`, `Test.csv`: Dataset files for training and testing
-- `Meta.csv`: Metadata information
-- `data/`: Directory containing dataset images
+## Technologies Used
 
-## Requirements
+* **Python**
+* **TensorFlow**
+* **Keras**
+* **NumPy**
+* **Pandas**
+* **OpenCV / PIL**
+* **Matplotlib**
+* **Scikit-learn**
+* **Tkinter**
+* **Jupyter Notebook**
 
-- Python 3.x
-- TensorFlow
-- Keras
-- NumPy
-- Pandas
-- OpenCV
-- Matplotlib
-- Jupyter Notebook
+---
+  
+
+## Machine Learning Model
+
+The project uses a **Convolutional Neural Network (CNN)** for image classification.
+
+---
+
+### Model Architecture
+
+The CNN consists of:
+
+* Convolutional layers
+* ReLU activation functions
+* Max Pooling layers
+* Dropout layers
+* Flatten layer
+* Fully Connected Dense layer
+* Softmax output layer
+
+The input images are resized to **30 × 30 pixels** with 3 RGB channels.
+
+The final layer contains **43 output classes**, representing the different traffic sign categories.
+
+---
+
+
+### Training Configuration
+
+* **Input Size:** 30 × 30 × 3
+* **Number of Classes:** 43
+* **Optimizer:** Adam
+* **Loss Function:** Categorical Cross-Entropy
+* **Batch Size:** 32
+* **Epochs:** 15
+* **Activation:** ReLU and Softmax
+* **Train/Test Split:** 80/20
+
+---
+
+
+## Traffic Sign Categories
+
+The model can recognize traffic signs such as:
+
+* Speed Limit signs
+* No Passing
+* Right-of-Way
+* Priority Road
+* Yield
+* Stop
+* No Entry
+* General Caution
+* Dangerous Curve
+* Road Work
+* Traffic Signals
+* Pedestrian Crossing
+* Children Crossing
+* Bicycle Crossing
+* Slippery Road
+* Keep Left / Keep Right
+* Roundabout Mandatory
+* End of Speed Limit
+* And many more
+
+---
+
+
+## 📂 Project Structure
+
+```text
+Traffic_Sign_Detection_System/
+│
+├── data/
+│   └── dictionary.sqlite
+│
+├── GUI.ipynb
+├── traffic_signs.ipynb
+│
+├── Train.csv
+├── Test.csv
+├── Meta.csv
+│
+├── traffic_classifier.h5
+├── traffic_classifier.keras
+├── my_model.h5
+│
+└── README.md
+```
+
+---
 
 ## Installation
 
-1. Clone this repository
-2. Install the required dependencies:
-   ```bash
-   pip install tensorflow keras numpy pandas opencv-python matplotlib jupyter
-   ```
-3. Launch Jupyter Notebook to run the GUI:
-   ```bash
-   jupyter notebook GUI.ipynb
-   ```
+### 1. Clone the Repository
 
-## Usage
+```bash
+git clone https://github.com/your-username/Traffic_Sign_Detection_System.git
+```
 
-1. Open `GUI.ipynb` in Jupyter Notebook
-2. Run all cells to start the GUI interface
-3. Upload an image of a traffic sign through the interface
-4. The system will process the image and display the predicted traffic sign class
+### 2. Navigate to the Project Directory
 
-## Model Information
+```bash
+cd Traffic_Sign_Detection_System
+```
 
-The system uses a Convolutional Neural Network (CNN) architecture trained on a comprehensive dataset of traffic signs. The model achieves high accuracy in classifying various traffic sign categories.
+### 3. Install Required Libraries
 
-## Screenshots
+```bash
+pip install tensorflow keras numpy pandas pillow matplotlib scikit-learn opencv-python jupyter
+```
+
+---
+
+
+## Running the Project
+
+### Option 1: Run the GUI
+
+Open the GUI notebook:
+
+```bash
+jupyter notebook GUI.ipynb
+```
+
+Run all the cells and use the GUI to upload a traffic sign image.
+
+The system will:
+
+1. Open the image upload dialog.
+2. Load the selected traffic sign image.
+3. Resize the image to 30 × 30 pixels.
+4. Pass the image to the trained CNN model.
+5. Predict the traffic sign class.
+6. Display the predicted traffic sign.
+
+### Option 2: Train the Model
+
+To train the model from scratch, open:
+
+```bash
+jupyter notebook traffic_signs.ipynb
+```
+
+The notebook loads the training data, preprocesses the images, creates the CNN model, trains it for 15 epochs, evaluates the model, and saves the trained model.
+
+---
+
+
+## Model Training
+
+The training notebook performs the following steps:
+
+```text
+Dataset
+   ↓
+Image Loading
+   ↓
+Image Resizing (30 × 30)
+   ↓
+Data Preprocessing
+   ↓
+Train/Test Split
+   ↓
+One-Hot Encoding
+   ↓
+CNN Model Creation
+   ↓
+Model Training
+   ↓
+Model Evaluation
+   ↓
+Trained Model
+```
+
+---
+
+## GUI Workflow
+
+```text
+Upload Traffic Sign Image
+          ↓
+      Preprocessing
+          ↓
+    CNN Model Prediction
+          ↓
+    Predicted Class
+          ↓
+ Display Traffic Sign Name
+```
+
+---
+
+
+##  Example
 
 ## Screenshot 1
 ![Screenshot (312)](https://github.com/ayus1234/Traffic_Sign_Detection_System/assets/107507481/db779b23-5a8f-4c40-9964-20b2cbcc22d2)
@@ -76,10 +254,81 @@ The system uses a Convolutional Neural Network (CNN) architecture trained on a c
 ## Screenshot 6
 ![Screenshot (311)](https://github.com/ayus1234/Traffic_Sign_Detection_System/assets/107507481/8a70bee6-24f2-404b-861a-9235846f7db5)
 
+---
+
+## Applications
+
+This project can be used as a foundation for:
+
+* Advanced Driver Assistance Systems (ADAS)
+* Autonomous vehicles
+* Intelligent transportation systems
+* Road safety applications
+* Computer vision projects
+* AI-based traffic monitoring systems
+* Machine learning and deep learning education
+
+---
+
+## Future Improvements
+
+Possible improvements include:
+
+* Real-time traffic sign detection using a webcam
+* Object detection instead of image classification
+* Integration with OpenCV
+* Deployment as a web application
+* Mobile application integration
+* Improved CNN architecture
+* Data augmentation for better generalization
+* Real-time video traffic sign recognition
+* Deployment using TensorFlow Lite
+
+---
+
+
+## Dataset
+
+The project uses a traffic sign dataset containing multiple categories of road signs. The dataset is divided into training and testing information and contains images representing **43 traffic sign classes**
+
+---
+
+
 ## Contributing
 
-Feel free to fork this repository and submit pull requests to contribute to this project.
+Contributions are welcome!
+
+If you would like to improve this project:
+
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes.
+4. Commit your changes.
+5. Push the branch.
+6. Create a Pull Request.
 
 ## License
 
-This project is open source and available under the MIT License.
+This project is intended for educational and research purposes. You may modify and extend it according to your requirements.
+
+---
+
+
+## Author
+
+**Rishav Kumar**
+
+If you found this project useful, consider giving the repository on GitHub!
+
+---
+
+### Project Repository
+
+Add your GitHub repository link here:
+
+```text
+https://github.com/your-username/Traffic_Sign_Detection_System
+```
+---
+
+
